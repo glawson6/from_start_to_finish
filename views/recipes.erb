@@ -1,0 +1,26 @@
+
+<form role="search">
+    <input type="text" name="search" value="<%= @search %>" placeholder="Search">
+    <button type="submit">Submit</button>
+    <button type="reset"
+            onclick="window.location.href='/items'">Reset</button>
+</form>
+<div class="col-md-6">
+<section class="recipe-table">
+<table  class="table table-condensed">
+    <tr>
+        <th>Title</th>
+        <th>Cooking Time</th>
+        <th>Details</th>
+    </tr>
+    <% @recipes.each do |recipe| %>
+        <tr>
+            <td><%= recipe.title %></td>
+            <td><%= recipe.cooking_time %></td>
+            <td><a class="recipes-link" href="recipe/<%= recipe.id %>">See Details</a></td>
+        </tr>
+    <% end %>
+</table>
+</section>
+</div>
+<div class="col-md-4"> </div>

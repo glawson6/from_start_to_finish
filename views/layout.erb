@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>From Start To Finish!</title>
+      <!--link rel="stylesheet" href="http://bootswatch.com/darkly/bootstrap.min.css"/-->
+      <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/main.css" />
+  </head>
+
+  <body>
+
+  <section class="container-fluid">
+      <h1 class="text-center app-title">From Start To Finish!</h1>
+      <section class="row">
+          <div class="col-xs-2">
+            <header id='header' class="header">
+                <nav role="navigation">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/recipes">Recipes</a></li>
+                        <li><a href="/about">About</a></li>
+                    </ul>
+                </nav>
+            </header>
+          </div>
+          <%= yield %>
+      </section>
+  </section>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

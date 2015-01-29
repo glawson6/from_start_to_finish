@@ -1,0 +1,70 @@
+@import url(http://fonts.googleapis.com/css?family=Noto+Serif:700italic,700);
+body {
+    background: url("../images/veggies-2.jpeg") no-repeat center center fixed;
+    /*-webkit-background-size: cover;*/
+    /*-moz-background-size: cover;*/
+    /*-o-background-size: cover;*/
+    background-size: cover;
+    color: #27987C;
+}
+
+
+.recipe-table{
+    color: #ffffff;
+}
+
+.left-box{
+    border: solid black;
+
+}
+
+h1 {
+    font-family: 'Noto Serif', serif;
+    font-style: italic;
+}
+
+.container-extras{
+    background: url("../images/veggies-bw.jpeg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+header nav ul li a:hover {
+    background-color: #003D2E !important;
+}
+
+header nav ul li a {
+    color: #00C6A1 !important;
+}
+
+.recipes-link{
+    color: #00C6A1;
+}
+section.recipe-table table.table tbody tr{
+    color: #ffffff;
+}
+section.recipe-table table.table tbody tr a{
+    color: #ffffff;
+}
+
+.recipes-title{
+    color: #ffffff;
+}
+
+.ingredients{
+    color: #ffffff;
+}
+
+.directions{
+    color: #ffffff;
+
+}
+section.recipe-table form button{
+    color: #00C6A1;
+}
+
+section.recipe-table form button{
+    color: #00C6A1;
+}

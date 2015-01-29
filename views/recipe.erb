@@ -1,0 +1,20 @@
+<div class="col-md-10">
+<section class="recipe">
+    <section class="recipe-title"><h3 class="recipes-title"><%= @recipe.title%></h3></section>
+    <section class="ingredients">
+        <p>Ingredients:</p>
+        <ul>
+        <% @recipe.ingredients.each do |ingredient| %>
+            <li><%= ingredient%></li>
+        <% end %>
+        </ul>
+        <p>Cooking time: <%= @recipe.cooking_time%> minutes</p>
+    </section>
+    <br>
+    <section class="Directions">
+        <p>Directions:</p>
+        <p><%= @recipe.directions%></p>
+    </section>
+</section>
+    <button onclick="window.history.back()">Back</button>
+</div>
