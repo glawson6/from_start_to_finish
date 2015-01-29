@@ -8,6 +8,12 @@ body {
     color: #27987C;
 }
 
+.jumbotron{
+    text-align: center;
+    padding: 2px;
+    margin-bottom: 0;
+
+}
 
 .recipe-table{
     color: #ffffff;
@@ -31,11 +37,11 @@ h1 {
     background-size: cover;
 }
 
-header nav ul li a:hover {
+ul.nav li a:hover {
     background-color: #003D2E !important;
 }
 
-header nav ul li a {
+ul.nav li a {
     color: #00C6A1 !important;
 }
 
@@ -67,4 +73,48 @@ section.recipe-table form button{
 
 section.recipe-table form button{
     color: #00C6A1;
+}
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+/*
+nav {
+    text-align: center;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+nav li {
+    float: left;
+}
+*/
+
+.jumbo-opacity{
+    opacity: 0.5;
+    font-family: 'Noto Serif', serif;
+    font-style: italic;
+    
+}
+
+.menu-container {
+    text-align: center;
+}
+
+div.menu-top {
+
+}
+
+div.menu-top ul {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+div.menu-top li {
+    float: left;
 }
