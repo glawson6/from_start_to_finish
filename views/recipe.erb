@@ -1,20 +1,33 @@
-<div class="col-md-10">
-<section class="recipe">
-    <section class="recipe-title"><h3 class="recipes-title"><%= @recipe.title%></h3></section>
-    <section class="ingredients">
-        <p>Ingredients:</p>
-        <ul>
-        <% @recipe.ingredients.each do |ingredient| %>
-            <li><%= ingredient%></li>
-        <% end %>
-        </ul>
-        <p>Cooking time: <%= @recipe.cooking_time%> minutes</p>
-    </section>
-    <br>
-    <section class="Directions">
-        <p>Directions:</p>
-        <p><%= @recipe.directions%></p>
-    </section>
+<section class="container items">
+    <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading"><h4><%= @recipe.title %></h4></div>
+        <div class="panel-body">
+            <article class="row">
+                <div class="col-md-4">
+                    <img class="middle" width=300px src="<%= @recipe.image_url %>"/>
+                </div>
+                <div class="col-md-8">
+                    <dl class="dl-horizontal">
+                        <dt>Ingredients:</dt>
+                        <dd>
+                            <ul class="">
+                                <% @recipe.ingredients.each do |ingredient| %>
+                                    <li><%= ingredient%></li>
+                                <% end %>
+                            </ul>
+                        </dd>
+                        <dt>Dircetions:</dt>
+                        <dd><%= @recipe.directions %></dd>
+                        <dt>Cooking Time:</dt>
+                        <dd><%= @recipe.cooking_time %> minute(s)</dd>
+                    </dl>
+                </div>
+            </article>
+        </div>
+        <div class="panel-footer">
+            <a class="recipes-link" onclick="window.history.back(); true;" href="/">Back</a>
+         </div>
+    </div>
+
 </section>
-    <button onclick="window.history.back()">Back</button>
-</div>

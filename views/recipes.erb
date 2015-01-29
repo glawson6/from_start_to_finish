@@ -1,27 +1,24 @@
 
-<form role="search">
-    <input type="text" name="search" value="<%= @search %>" placeholder="Search">
-    <button type="submit">Submit</button>
-    <button type="reset"
-            onclick="window.location.href='/items'">Reset</button>
-</form>
-<div class="col-sm-1"> </div>
-<div class="col-sm-6">
-<section class="recipe-table">
-<table  class="table table-condensed">
-    <tr>
-        <th>Title</th>
-        <th>Cooking Time</th>
-        <th>Details</th>
-    </tr>
-    <% @recipes.each do |recipe| %>
-        <tr>
-            <td><%= recipe.title %></td>
-            <td><%= recipe.cooking_time %></td>
-            <td><a class="recipes-link" href="recipe/<%= recipe.id %>">See Details</a></td>
-        </tr>
-    <% end %>
-</table>
+<section class="container items">
+    <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading"><h4>Results</h4></div>
+        <div class="panel-body">
+
+            <table  class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Cooking Time</th>
+                </tr>
+                </thead>
+                <% @recipes.each do |recipe| %>
+                    <tr>
+                        <td><a class="recipes-link" href="recipe/<%= recipe.id %>"><%= recipe.title %></a></td>
+                        <td><a class="recipes-link" href="recipe/<%= recipe.id %>"><%= recipe.cooking_time %></a></td>
+                    </tr>
+                <% end %>
+            </table>
+        </div>
+    </div>
 </section>
-</div>
-<div class="col-sm-6"> </div>
