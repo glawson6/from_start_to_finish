@@ -177,3 +177,49 @@ div.menu-top li {
 .search {
     text-align: center;
 }
+
+.pseudo-table {
+    display:table;
+    border-collapse: separate;
+    border-spacing: 0px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 1.4em;
+    background-color: #303030;
+}
+.pseudo-table-row {
+    display:table-row;
+    background:#EEE;
+    margin: 10px;
+    padding: 10px;
+    background-color: #303030;
+}
+.pseudo-table-cell {
+    display:table-cell;
+    border-top: 1px solid #dddddd;
+    margin: 10px;
+    padding: 10px;
+    width:100%;
+}
+
+.pseudo-table a {
+    text-decoration: none;
+}
+/*
+table {
+    border-collapse: separate;
+    border-spacing: 0px;
+}
+tr {
+    background:#EEE;
+}
+td {
+    border-top: 1px solid #dddddd;
+}
+*/
+a:hover {
+    background:#DDD;
+}
+p.our-story-p {
+    text-indent: 50px;
+}

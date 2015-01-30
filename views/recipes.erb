@@ -1,7 +1,6 @@
-
+<!--
 <section class="container items">
     <div class="panel panel-default">
-        <!-- Default panel contents -->
         <div class="panel-heading"><h4>Results</h4></div>
         <div class="panel-body">
 
@@ -19,6 +18,28 @@
                     </tr>
                 <% end %>
             </table>
+        </div>
+    </div>
+</section>
+-->
+<section class="container items">
+    <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading"><h4>Results</h4></div>
+        <div class="panel-body">
+
+            <div class="pseudo-table table-striped">
+                <div class="pseudo-table-row">
+                    <div class="pseudo-table-cell">Title</div>
+                    <div class="pseudo-table-cell">Cooking Time</div>
+                </div>
+                <% @recipes.each do |recipe| %>
+                    <a class="recipes-link pseudo-table-row" href="recipe/<%= recipe.id %>">
+                        <div class="pseudo-table-cell"><%= recipe.title %></div>
+                        <div class="pseudo-table-cell"><%= recipe.cooking_time %></div>
+                    </a>
+                <% end %>
+            </div>
         </div>
     </div>
 </section>
