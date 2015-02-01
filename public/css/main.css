@@ -202,6 +202,9 @@ div.menu-top li {
     width:100%;
 }
 
+a.pseudo-table-row:hover {
+    opacity: 0.5;
+}
 .pseudo-table a {
     text-decoration: none;
 }
