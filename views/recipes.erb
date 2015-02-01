@@ -1,31 +1,9 @@
-<!--
-<section class="container items">
-    <div class="panel panel-default">
-        <div class="panel-heading"><h4>Results</h4></div>
-        <div class="panel-body">
 
-            <table  class="table table-striped">
-                <thead>
-                <tr>
-                    <th>Title</th>
-                    <th>Cooking Time</th>
-                </tr>
-                </thead>
-                <% @recipes.each do |recipe| %>
-                    <tr>
-                        <td><a class="recipes-link" href="recipe/<%= recipe.id %>"><%= recipe.title %></a></td>
-                        <td><a class="recipes-link" href="recipe/<%= recipe.id %>"><%= recipe.cooking_time %></a></td>
-                    </tr>
-                <% end %>
-            </table>
-        </div>
-    </div>
-</section>
--->
 <section class="container items">
-    <div class="panel panel-default">
+    <div class="panel panel-default border-dressing">
         <!-- Default panel contents -->
-        <div class="panel-heading"><h4>Results</h4></div>
+        <% filters = (@search)?" filters: #{@search}":nil%>
+        <div class="panel-heading"><h4>Recipes <%= filters%></h4></div>
         <div class="panel-body">
 
             <div class="pseudo-table table-striped">
